@@ -4,11 +4,22 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="app.js"></script>
         <script src="myNewAppCtrl.js"></script>
 
     </head>
     <body>
+            <div ng-controller="myNewAppCtrl">
+                    X:
+                    <input type="number" ng-model="x"><br><br>
+                    Y:
+                    <input type="number" ng-model="y"><br>
+                   <p>Sum: {{sum()}}</p>
+                   <p>Minus: {{minus()}}</p>
+                   <p>Total: {{total()}}</p>
+                   <p>Divide: {{divide()}}</p>
+                 
     
     </body>
 </html>
